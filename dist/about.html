@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/output.css" rel="stylesheet" />
+    <title>FBS</title>
+    <link rel="shortcut icon" href="./img/logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <div
+          class="header__wrapper flex items-center bg-center justify-between">
+          <div class="logo">
+            <a href="#"><img src="./img/logo-fbs.png" alt="" /></a>
+          </div>
+          <nav class="header__nav">
+            <div>
+              <ul class="nav-links flex uppercase flex-col text-center md:flex-row items-center md:gap-7">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#dropdown">Services</a>
+                  <ul class="nav-links-dropdown md:hidden">
+                    <li class=""><a href="#" class="text-sm">Web Solutions</a></li>
+                    <li class=""><a href="#" class="text-sm">Virtual Assistant Solutions</a></li>
+                    <li class=""><a href="#" class="text-sm">Accounting Solutions</a></li>
+                    <li class=""><a href="#" class="text-sm">Learning Center Solutions</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Payment</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="burger__menu relative w-[40px] h-[40px] lg:hidden cursor-pointer transition-all duration-[0.5s] ease-in-out">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="banner bg-accent py-12 bg-clrBg bg-fbsBanner">
+        <div class="container">
+          <div class="banner__wrapper flex flex-col gap-2 md:flex-row md:gap-3 items-center">
+            <div class="banner-content">
+              <h1 class="text-3xl mb-6">
+                <strong>About</strong> Us
+              </h1>
+              <p class="mb-6">
+                As a social enterprise company, we are "in business for good." Our commitment is to leverage business success for the good of people and the communities in which we exist. 
+                Our vision and mission is successful business that maintains harmony between the three goals of excellent products and services, revenue generation, and positive social impacts.
+              </p>
+              <a href="#" class="btn bg--primary uppercase">Contact Us</a>
+            </div>
+            <img src="./img/about-us-540.svg" alt="" />
+          </div>
+        </div>
+    </section>
+
+    <section class="ethics py-10">
+        <div class="container">
+            <h2>"<strong>Partnering</strong> with a <strong>company</strong> committed to
+                <strong> caring</strong> about <strong>people</strong> and <strong>community development</strong>".
+                </h2>
+            <div class="ethics__wrapper">
+                <div class="ethics__card">
+                    <img src="../dist/img/vision.svg" alt="">
+                    <h2>Vision</h2>
+                    <p>To be a globally competitive, premier provider of excellent business solutions, while sustaining a business model that will create positive social impact and make the Philippines an outstanding place to live and work.</p>
+                </div>
+                <div class="ethics__card">
+                    <img src="../dist/img/Mission.svg" alt="">
+                    <h2>Mission</h2>
+                    <p>FBS is a Godly, caring company, committed to holistically equipping its people, developing local talents, providing high client satisfaction and positively impacting the communities in which it exists.</p>
+                </div>
+                <div class="ethics__card">
+                    <img src="../dist/img/Values.svg" alt="">
+                    <h2>Values</h2>
+                    <ul>
+                        <li>Godly Stewardship</li>
+                        <li>Excellence</li>
+                        <li>Professionalism</li>
+                        <li>Integrity</li>
+                        <li>Generosity</li>
+                        <li>Teamwork</li>
+                        <li>Loving People</li>
+                        <li>Fun</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="team">
+        <div class="container">
+            <div class="team__wrapper">
+                <h2>Meet <strong>Our Team</strong></h2>
+                <p>We <strong>listen</strong>, we <strong>discuss </strong>and <strong>develop</strong>.</p>
+                <img src="../dist/img/fbs-team-2022-1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-3 bg-primary font-montserrat">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__info py-4">
+              <img src="../dist/img/logo-fbs-wht.png" alt="">
+              <p class="text-[#eadee4] text-center text-xs mb-[1.25rem]">Copyright &copy; 2024</p>
+              <ul>
+                <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-square-youtube"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-slack"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+  
+            <div class="footer__services relative py-5 text-light text-center">
+              <a href=""><h4  class="uppercase mb-6 font-semibold">Services we offer</h4></a>
+              <ul>
+                <li><a href="">Web Solutions</a></li>
+                <li><a href="">Virtual Assistant Solutions</a></li>
+                <li><a href="">Accounting Solutions</a></li>
+                <li><a href="">Learning Center Solutions</a></li>
+              </ul>
+            </div>
+  
+            <div class="footer__contact relative py-5 text-light">
+              <h4 class="uppercase font-semibold text-sm text-center mb-5 md:text-left">Contact Details</h4>
+              <ul>
+                <li><i class="fa-solid fa-phone"></i>049 501 3592</li>
+                <li><i class="fa-solid fa-mobile-screen-button"></i>0927 168 6810</li>
+                <li><i class="fa-solid fa-clock"></i>Monday - Friday | 7:00am - 4:30pm</li>
+                <li><i class="fa-solid fa-envelope"></i>info@frontlinebusiness.com.ph</li>
+                <li><i class="fa-solid fa-house"></i>Baloc road, Brgy. San Ignacio, San Pablo City, Laguna, 4000</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
+  
+    <script src="./js/script.js"></script>
+  
+    </body>
+</html>

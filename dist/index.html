@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/output.css" rel="stylesheet" />
+    <title>FBS</title>
+    <link rel="shortcut icon" href="./img/logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div
+          class="header__wrapper flex items-center bg-center justify-between">
+          <div class="logo">
+            <a href="#"><img src="./img/logo-fbs.png" alt="" /></a>
+          </div>
+          <nav class="header__nav">
+            <div>
+              <ul class="nav-links flex uppercase flex-col text-center md:flex-row items-center md:gap-7">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#dropdown">Services</a>
+                  <ul class="nav-links-dropdown md:hidden">
+                    <li class=""><a href="#" class="text-sm">Web Solutions</a></li>
+                    <li class=""><a href="#" class="text-sm">Virtual Assistant Solutions</a></li>
+                    <li class=""><a href="#" class="text-sm">Accounting Solutions</a></li>
+                    <li class=""><a href="#" class="text-sm">Learning Center Solutions</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Payment</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="burger__menu relative w-[40px] h-[40px] lg:hidden cursor-pointer transition-all duration-[0.5s] ease-in-out">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="banner bg-accent py-12 bg-clrBg bg-fbsBanner">
+      <div class="container">
+        <div class="banner__wrapper flex flex-col gap-2 md:flex-row md:gap-3 items-center">
+          <div class="banner-content">
+            <h1 class="text-3xl mb-6">
+              Excellence in <strong>Managed Services</strong> and
+              <strong>Web Solutions</strong>
+            </h1>
+            <p class="mb-6">
+              Along with our website design & development solutions (Including
+              website hosting, graphic design, and basic SEO services), FBS
+              meets the needs of clients through recruiting and managing
+              professionals who serve in a wide array of areas like bookkeeping
+              and accounting, virtual assistant and data entry personnel. If you
+              want excellent customer service and a dedicated professional
+              working at a competitive price, we can meet your needs.
+            </p>
+            <a href="#" class="btn bg--primary uppercase">Our Services</a>
+          </div>
+          <img src="./img/fbs-banner-bg.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="desc my-16">
+      <div class="container">
+        <div class="desc__wrapper text-center md:flex md:flex-col md:items-center">
+          <h1 class="text-3xl mb-5 leading-[2.5rem]">
+            <strong class="font-extrabold">Who We Are?</strong> <br />
+            What We Do?
+          </h1>
+          <p class="mb-7">
+            Frontline Business Solutions, Inc. is an Information Technology and
+            Accounting business solutions company that offers a variety of
+            services to SME’s. Our commitment is to leverage business success
+            for the good of people and the communities in which we exist. Our
+            vision and mission is a successful business that maintains harmony
+            between the three goals of excellent products and services, revenue
+            generation, and positive social impact. By choosing Frontline
+            Business Solutions, Inc. you are partnering with a company committed
+            to caring about people and community development.
+          </p>
+          <a href="#" class="btn bg--primary">Watch Video</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services py-[4.5rem] md:py-[8rem] bg-fbsServices">
+      <div class="container">
+        <h1 class="pb-16 text-3xl text-center">
+          What <strong class="font-extrabold">We Offer</strong>?
+        </h1>
+        <div class="services__wrapper">
+          <div class="services__card">
+            <div class="mb-10 card-title">
+              <img src="./img/code-solid.png" alt="" class="mb-5 max-w-[50px] h-full"/>
+              <h2 class="text-xl">Web Solutions</h2>
+            </div>
+            <ul class="list-circle flex flex-col gap-3">
+              <li>Lorem, ipsum dolor.</li>
+              <li>Dolores, corrupti dolore.</li>
+              <li>Est, ea magnam.</li>
+              <li>Sint, molestiae doloribus.</li>
+              <li>Ea, eos dignissimos.</li>
+              <li>Alias, labore excepturi?</li>
+              <li>Odit, fuga mollitia.</li>
+            </ul>
+          </div>
+          <div class="services__card ">
+            <div class="mb-10 card-title">
+              <img src="./img/headset-solid.png" alt="" class="mb-5 max-w-[50px] h-full"/>
+              <h2 class="text-xl text-center">Virtual Assistant Solutions</h2>
+            </div>
+            <ul class="list-circle flex flex-col gap-3">
+              <li>Lorem, ipsum dolor.</li>
+              <li>Dolores, corrupti dolore.</li>
+              <li>Est, ea magnam.</li>
+              <li>Sint, molestiae doloribus.</li>
+              <li>Ea, eos dignissimos.</li>
+              <li>Alias, labore excepturi?</li>
+              <li>Odit, fuga mollitia.</li>
+            </ul>
+          </div>
+
+          <div class="services__card">
+            <div class="mb-10 card-title">
+              <img src="./img/calculator-solid.png" alt="" class="mb-5 max-w-[50px] h-full"/>
+              <h2 class="text-xl text-center">Accounting Solutions</h2>
+            </div>
+            <ul class="list-circle flex flex-col gap-3">
+              <li>Lorem, ipsum dolor.</li>
+              <li>Dolores, corrupti dolore.</li>
+              <li>Est, ea magnam.</li>
+            </ul>
+          </div>
+
+          <div class="services__card ">
+            <div class="mb-10 card-title">
+              <img
+                src="./img/chalkboard-user-solid.png"
+                alt=""
+                class="mb-5 max-w-[50px] h-full"
+              />
+              <h2 class="text-xl text-center">Learning Center Solutions</h2>
+            </div>
+            <ul class="list-circle flex flex-col gap-3">
+              <li>Lorem, ipsum dolor.</li>
+              <li>Dolores, corrupti dolore.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials bg-clrBg py-[5rem]">
+      <div class="container">
+        <h2 class="text-3xl font-medium text-center mb-16">Hear what our <strong class="font-extrabold">clients say.</strong></h2>
+        <div class="testimonials__wrapper">
+          <div class="testimonials__info">
+            <img src="../dist/img/jamesDavidson-e1685672789528.jpg" alt="">
+            <h2 class="mt-3 font-semibold text-xl">James Davidson</h2>
+            <p class="mb-[1.25rem]">Managing Director & President</p>
+            <h4 class="text-sm font-semibold">Avant Advisory Group</h4>
+          </div>
+          <div class="testimonials__text px-10">
+            <div class="testimonials__desc">
+              <h2>
+                <div class="font-bold text-[0.87rem] text-center leading-8">
+                  “Frontline Business Solutions” Is beyond an exceptional firm. Professional courtesy, responsiveness, competence, and client service are only a few of the many high level qualities that Frontline’s team exhibit. 
+                  Frontline exemplifies the golden rule by treating its clients as it would like to be treated. 
+                  Every Frontline team member with whom Avant Advisory Group has dealt has been a true blessing. Finally, based on Avant Advisory Group’s several years of working with Frontline personnel, and especially Mike DeJesus, 
+                  I can say that they work heartily for their clients as if they are working for the Lord. (Colossians 3:23-24) Thank you for what you do, Frontline!”
+                </div>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news py-[5rem]">
+      <div class="container">
+        <h2 class="text-3xl mb-16 text-center"><strong class="font-extrabold">Events </strong>and <strong class="font-extrabold">Activities</strong></h2>
+        <div class="news__wrapper mb-20">
+          <div class="news__card">
+            <div class="zoom-img">
+              <div class="bg-clip-content"><img src="../dist/img/5th-year-thumb_3-350x192.jpg" alt=""></div>
+            </div>
+            <div class="news__info">
+              <h2>FBS 5th Anniversary</h2>
+              <p>Our 5th-year celebration at Frontline Business Solutions is a special time to look back on…</p>
+            </div>
+            <p class="btn-link">
+              <a href="#" class="btn-read">Read More</a>
+            </p>
+          </div>
+          <div class="news__card">
+            <div class="zoom-img">
+              <div><img src="../dist/img/companyRetreat-350x192.jpg" alt=""></div>
+            </div>
+
+            <div class="news__info">
+              <h2>Company Retreat 2023</h2>
+              <p>Our company retreat at the Rizal Recreational Center in Rizal, Laguna, held from October 20…</p>
+            </div>
+            <p class="btn-link">
+              <a href="#" class="btn-read">Read More</a>
+            </p>
+          </div>
+          <div class="news__card">
+            <div class="zoom-img">
+              <div><img src="../dist/img/HTML-Crash-Course-wide-350x192.jpg" alt=""></div>
+            </div>
+            <div class="news__info">
+              <h2>HTML & CSS3 ONLINE CRASH COURSE FOR BEGINNERS</h2>
+              <p>Are you eager to start your web development journey from scratch? Join us for our…</p>
+            </div>
+            <p class="btn-link">
+              <a href="#" class="btn-read">Read More</a>
+            </p>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="#" class="btn-view uppercase text-lg font-semibold hover:bg-[#6a103f1a] hover:border-[#6a103f1a] hover:border-[1px]">View All</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer py-3 bg-primary font-montserrat">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__info py-4">
+            <img src="../dist/img/logo-fbs-wht.png" alt="">
+            <p class="text-[#eadee4] text-center text-xs mb-[1.25rem]">Copyright &copy; 2024</p>
+            <ul>
+              <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-square-youtube"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-slack"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="footer__services relative py-5 text-light text-center">
+            <a href=""><h4  class="uppercase mb-6 font-semibold">Services we offer</h4></a>
+            <ul>
+              <li><a href="">Web Solutions</a></li>
+              <li><a href="">Virtual Assistant Solutions</a></li>
+              <li><a href="">Accounting Solutions</a></li>
+              <li><a href="">Learning Center Solutions</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__contact relative py-5 text-light">
+            <h4 class="uppercase font-semibold text-sm text-center mb-5 md:text-left">Contact Details</h4>
+            <ul>
+              <li><i class="fa-solid fa-phone"></i>049 501 3592</li>
+              <li><i class="fa-solid fa-mobile-screen-button"></i>0927 168 6810</li>
+              <li><i class="fa-solid fa-clock"></i>Monday - Friday | 7:00am - 4:30pm</li>
+              <li><i class="fa-solid fa-envelope"></i>info@frontlinebusiness.com.ph</li>
+              <li><i class="fa-solid fa-house"></i>Baloc road, Brgy. San Ignacio, San Pablo City, Laguna, 4000</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+  </body>
+</html>

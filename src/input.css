@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    @apply max-w-[73rem] p-5 w-full mx-auto
+}
+
+@layer components {
+
+    /* HEADER */
+
+    .header__nav {
+        @apply hidden md:block
+    }
+
+    .burger__menu span {
+        @apply bg-primary block absolute h-[0.5rem] w-full rounded-xl transition-all duration-[0.25s] ease-in-out
+    }
+
+    .burger__menu span:nth-child(1) {
+        @apply top-0
+    }
+    .burger__menu span:nth-child(2) {
+        @apply top-[15px]
+    }
+    .burger__menu span:nth-child(3) {
+        @apply top-[15px]
+    }
+    .burger__menu span:nth-child(4) {
+        @apply top-[30px]
+    }
+
+    .burger__menu.open span:nth-child(1), .burger__menu.open span:nth-child(4) {
+        @apply w-[0%] left-[30%] top-[10px]
+    }
+
+    .burger__menu.open span:nth-child(2) {
+        @apply rotate-45
+    }
+
+    .burger__menu.open span:nth-child(3) {
+        @apply -rotate-45
+    }
+
+    
+    /* BANNER */
+
+    .banner {
+        @apply bg-no-repeat bg-right-top
+    }
+
+    .banner-content h1{
+        @apply font-montserrat md:max-w-[33rem] leading-10 max-w-[20rem]
+    }
+
+    .banner-content h1 strong {
+        @apply font-extrabold
+    }
+
+    .banner-content p{
+        @apply font-montserrat text-base text-left max-w-[33.4rem]
+    }
+
+    /* DESC */
+
+    .desc {
+        @apply font-montserrat
+    }
+
+    .desc p {
+        @apply max-w-[55rem] text-center
+    }
+
+    /* SERVICES */
+
+    .services {
+        @apply bg-no-repeat bg-center bg-cover font-montserrat text-light
+    }
+
+    .services__wrapper {
+        @apply grid gap-[2rem] md:grid-cols-4
+    }
+
+    .services__card {
+        @apply flex flex-col gap-3 md:max-w-[30rem] px-3
+    }
+
+    .services__card .card-title {
+        @apply flex flex-col items-center
+    }
+
+    /* TESTIMONIALS */
+
+    .testimonials {
+        @apply font-montserrat
+    }
+
+    .testimonials__wrapper {
+        @apply grid gap-[3.75rem] md:grid-cols-2 md:gap-0
+    }
+
+    .testimonials__info {
+        @apply flex flex-col items-center
+    }
+
+    .testimonials__info img {
+        @apply rounded-full max-w-[20rem] object-cover
+    }
+    
+    .testimonials__text {
+        @apply flex items-center
+    }
+
+    /* NEWS */
+
+    .news {
+        @apply font-montserrat
+    }
+
+    .news__wrapper {
+        @apply flex flex-wrap gap-5 justify-center
+    }
+
+    .news__card {
+        @apply flex flex-col relative max-w-[21.8rem] items-center shadow-md shadow-[#b1b1b1] overflow-hidden
+    }
+
+    .news__card .zoom-img {
+        @apply relative transition-all duration-[0.5s] ease-in-out hover:scale-[1.1]
+    }
+
+    .news__card img {
+        @apply overflow-hidden object-cover border-none 
+    }
+
+    .news__info {
+        @apply flex flex-col text-center p-[1.87rem]
+    }
+
+    .news__info h2 {
+        @apply font-semibold text-[1.25rem] mb-4
+    }
+
+    .news__info p {
+        @apply mb-20
+    }
+
+    .btn-link {
+        @apply absolute bottom-6
+    }
+
+    /* FOOTER */
+
+    .footer__wrapper {
+        @apply md:flex md:flex-row md:justify-between md:gap-0
+    }
+
+    .footer__info {
+        @apply md:w-[22rem]
+    }
+
+    .footer__info img {
+       @apply block mx-auto
+    }
+
+    .footer__info ul{
+        @apply text-light flex gap-6 text-2xl justify-center md:items-center
+    }
+
+    .footer__services {
+        @apply px-5 md:pl-20 md:before:content-[''] md:before:bottom-2 md:before:absolute md:before:border-l-[1px]
+        md:before:border-[#b1b1b1] md:before:left-0 md:before:h-[12rem]
+    }
+
+    .footer__contact {
+        @apply md:pl-5 md:before:content-[''] md:before:bottom-2 md:before:absolute md:before:border-l-[1px]
+        md:before:border-[#b1b1b1] md:before:left-0 md:before:h-[12rem]
+    }
+
+    .footer__services ul{
+        @apply flex flex-col gap-2 text-xs md:items-center md:justify-center
+    }
+
+    .footer__contact ul {
+        @apply flex flex-col gap-2 text-xs items-center md:items-start
+    }
+
+    .footer__contact ul li i {
+        @apply mr-3 text-sm
+    }
+
+}
+
+@layer utilities {
+    .btn {
+        @apply inline-block rounded-full border-transparent border-[1px] 
+        text-lg font-normal py-[0.65rem] px-[1.6rem];
+    }
+
+    .btn.bg--primary {
+        @apply bg-primary text-light font-semibold text-center hover:bg-transparent hover:border-primary hover:border-[1px] hover:text-dark transition-all duration-[0.5s]
+    }
+
+    .btn-read {
+        @apply inline-block rounded-full border-transparent border-[1px] 
+        text-base py-[0.8rem] px-[1.4rem] bg-primary text-light font-semibold
+        hover:bg-transparent hover:border-primary hover:border-[1px] hover:text-dark transition-all duration-[0.5s];
+    }
+
+    .btn-view {
+        @apply inline-block rounded-full border-[1px] border-dark
+        text-lg font-normal py-[0.7rem] px-[1.6rem];
+    }
+
+
+}
