@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../src/output.css" rel="stylesheet" />
     <title>FBS</title>
-    <link rel="shortcut icon" href="./img/logo.png" />
+    <link rel="shortcut icon" href="./img/fbs_favicon.ico"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
   </head>
@@ -20,26 +20,21 @@
           </div>
           <nav class="header__nav">
             <div>
-              <ul class="nav-links flex uppercase flex-col text-center md:flex-row items-center md:gap-7">
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">About</a>
-                </li>
-                <li>
-                  <a href="#dropdown">Services</a>
+              <ul class="nav-links flex uppercase flex-col text-center md:flex-row items-center md:gap-0">
+                <li class="submenu-item"><a href="../dist/index.html" class="submenu-name">Home</a></li>
+                <li class="submenu-item"><a href="../dist/about.html" class="submenu-name">About</a></li>
+                <li class="submenu-item"><a href="#dropdown" class="submenu-name">Services</a>
                   <ul class="nav-links-dropdown md:hidden">
-                    <li class=""><a href="#" class="text-sm">Web Solutions</a></li>
-                    <li class=""><a href="#" class="text-sm">Virtual Assistant Solutions</a></li>
-                    <li class=""><a href="#" class="text-sm">Accounting Solutions</a></li>
-                    <li class=""><a href="#" class="text-sm">Learning Center Solutions</a></li>
+                    <li class="dropdown-item"><a href="#" class="text-sm">Web Solutions</a></li>
+                    <li class="dropdown-item"><a href="#" class="text-sm">Virtual Assistant Solutions</a></li>
+                    <li class="dropdown-item"><a href="#" class="text-sm">Accounting Solutions</a></li>
+                    <li class="dropdown-item"><a href="#" class="text-sm">Learning Center Solutions</a></li>
                   </ul>
                 </li>
-                <li><a href="#">Career</a></li>
-                <li><a href="#">Activities</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Payment</a></li>
+                <li class="submenu-item"><a href="#" class="submenu-name">Career</a></li>
+                <li class="submenu-item"><a href="#" class="submenu-name">Activities</a></li>
+                <li class="submenu-item"><a href="#" class="submenu-name">Contact</a></li>
+                <li class="submenu-item"><a href="#" class="submenu-name">Payment</a></li>
               </ul>
             </div>
           </nav>
@@ -53,7 +48,7 @@
       </div>
     </header>
 
-    <section class="banner bg-accent py-12 bg-clrBg bg-fbsBanner">
+    <section class="banner bg-accent py-12 bg-clrBg bg-fbsBanner animate-gradient">
         <div class="container">
           <div class="banner__wrapper flex flex-col gap-2 md:flex-row md:gap-3 items-center">
             <div class="banner-content">
@@ -73,24 +68,24 @@
 
     <section class="ethics py-10">
         <div class="container">
-            <h2>"<strong>Partnering</strong> with a <strong>company</strong> committed to
-                <strong> caring</strong> about <strong>people</strong> and <strong>community development</strong>".
+            <h2 class="text-center text-3xl mb-16 leading-10">"<strong class="font-extrabold">Partnering</strong> with a <strong class="font-extrabold">company</strong> committed to
+                <strong class="font-extrabold"> caring</strong> about <strong class="font-extrabold">people</strong> and <strong class="font-extrabold">community development</strong>".
                 </h2>
             <div class="ethics__wrapper">
-                <div class="ethics__card">
-                    <img src="../dist/img/vision.svg" alt="">
+                <div class="ethics__card animate-fadeInLeft">
+                    <img src="../dist/img/vision.svg" alt="" class="max-h-[245px] mx-auto mt-2">
                     <h2>Vision</h2>
                     <p>To be a globally competitive, premier provider of excellent business solutions, while sustaining a business model that will create positive social impact and make the Philippines an outstanding place to live and work.</p>
                 </div>
-                <div class="ethics__card">
-                    <img src="../dist/img/Mission.svg" alt="">
+                <div class="ethics__card animate-fadeInUp">
+                    <img src="../dist/img/Mission.svg" alt="" class="max-h-[245px] mx-auto mt-2">
                     <h2>Mission</h2>
                     <p>FBS is a Godly, caring company, committed to holistically equipping its people, developing local talents, providing high client satisfaction and positively impacting the communities in which it exists.</p>
                 </div>
                 <div class="ethics__card">
-                    <img src="../dist/img/Values.svg" alt="">
+                    <img src="../dist/img/Values.svg" alt="" class="max-h-[245px] mx-auto mt-2">
                     <h2>Values</h2>
-                    <ul>
+                    <ul class="text-center md:text-left animate-fadeInRight">
                         <li>Godly Stewardship</li>
                         <li>Excellence</li>
                         <li>Professionalism</li>
@@ -106,15 +101,117 @@
     </section>
 
 
-    <section class="team">
-        <div class="container">
+    <section class="team bg-clrBg pt-20">
+        <div class="container-team">
             <div class="team__wrapper">
-                <h2>Meet <strong>Our Team</strong></h2>
-                <p>We <strong>listen</strong>, we <strong>discuss </strong>and <strong>develop</strong>.</p>
-                <img src="../dist/img/fbs-team-2022-1.png" alt="">
+                <h2 class="text-3xl text-center mb-4">Meet <strong class="font-extrabold">Our Team</strong></h2>
+                <p class="text-center mb-1">We <strong class="font-extrabold">listen</strong>, we <strong class="font-extrabold">discuss </strong>and <strong class="font-extrabold">develop</strong>.</p>
+                <p class="text-center mb-4 md:mb-10">We work together with these enthusiastic individuals for extraordinary results.</p>
+                <div class="team__group">
+                  <div class="team__box team-jj">
+                    <div class="team__position">
+                      <p>Jhonny Dichoso</p>
+                      <small>Supervisor, IT & LCS</small>
+                    </div>
+                    <img src="../dist/img/team-jj.png" alt="">
+                  </div>
+
+                  <div class="team__box team-jeff">
+                    <div class="team__position">
+                      <p>Jeffrey Pessina</p>
+                      <small>CEO</small>
+                    </div>
+                    <img src="../dist/img/team-jeff.png" alt="">
+                  </div>
+
+                  <div class="team__box team-ada">
+                    <div class="team__position">
+                      <p>Rhoda Beloso</p>
+                      <small>HR Manager</small>
+                    </div>
+                    <img src="../dist/img/team-ada.png" alt="">
+                  </div>
+
+                  <div class="team__box team-bea">
+                    <div class="team__position">
+                      <p>Bhea Del Monte</p>
+                      <small>Finance Head</small>
+                    </div>
+                    <img src="../dist/img/team-bea.png" alt="">
+                  </div>
+
+                  <div class="team__box team-patrick">
+                    <div class="team__position">
+                      <p>Patrick Reyes</p>
+                      <small>Supervisor, IT</small>
+                    </div>
+                    <img src="../dist/img/team-patrick.png" alt="">
+                  </div>
+
+                  <div class="team__box team-ralph">
+                    <div class="team__position">
+                      <p>Ralph Acoba</p>
+                      <small>Operations Manager</small>
+                    </div>
+                    <img src="../dist/img/team-ralph.png" alt="">
+                  </div>
+
+                  <div class="team__box team-michael">
+                    <div class="team__position">
+                      <p>Michael De Juses</p>
+                      <small>Supervisor, VA</small>
+                    </div>
+                    <img src="../dist/img/michael.png" alt="">
+                  </div>
+
+                </div>
+                <img src="../dist/img/fbs-team-2022-1.png" alt="" class="max-w-[403px] max-h-full block mx-auto md:hidden">
             </div>
         </div>
     </section>
+
+    <section class="cta py-[5rem]">
+      <div class="container">
+        <div class="cta__wrapper text-light text-center mx-auto">
+          <h2 class="text-[1.69rem] leading-[1.3] mb-7">There are more things that you should focus on. Let us handle your IT work.</h2>
+          <a href="" class="btn-cta">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="clients py-10 font-montserrat">
+      <div class="container">
+        <h2 class="text-[1.70rem] text-center mb-16">Some ouf our <strong class="font-extrabold">Clients and Partners</strong></h2>
+        <div class="clients__wrapper flex flex-col">
+          <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <li><a href=""><img src="../dist/img/logo-tazamia.png" alt="" width="73" height="95"></a></li>
+            <li><a href=""><img src="../dist/img/logo-spc.png" alt="" width="200" height="82"></a></li>
+            <li><a href=""><img src="../dist/img/logo-spcms-300x56.png" alt="" width="270" height="56"></a></li>
+            <li><a href=""><img src="../dist/img/logo-ottm.jpg" alt="" width="269" height="95"></a></li>
+            <li><a href=""><img src="../dist/img/logo_black.png" alt="" width="270" height="59"></a></li>
+            <li><a href=""><img src="../dist/img/logo-pyrobuster-black.png" alt=""></a></li>
+            <li><a href=""><img src="../dist/img/fca-logo (1).webp" alt="" width="269" height="95"></a></li>
+            <li><a href=""><img src="../dist/img/logo-pfm.jpg" alt=""></a></li>
+            <li><a href=""><img src="../dist/img/logo-threadworks.jpg" alt="" width="180" height="66"></a></li>
+            <li><a href=""><img src="../dist/img/logo-2miles.jpg" alt=""></a></li>
+            <li><a href=""><img src="../dist/img/logo.png" alt=""></a></li>
+            <li><a href=""><img src="../dist/img/remotelink.png" alt=""></a></li>
+            <li><a href=""><img src="../dist/img/logo-soc.jpg" alt=""></a></li>
+            <li><a href=""><img src="../dist/img/resound-structured-capital.png" alt=""></a></li>
+            <li><a href=""><img src="../dist/img/logo-avant.png" alt=""></a></li>
+            <li><a href=""><img src="../dist/img/logo-see.jpg" alt=""></a></li>
+            <li><a href=""><img src="../dist/img/logo-balaiin.png" alt=""></a></li>
+            <li><a href=""><img src="../dist/img/logo-jardin.png" alt=""></a></li>
+          </ul>
+          <ul class="md:flex md:flex-row md:justify-center">
+            <li><a href=""> <img src="../dist/img/logo-majathai.png" alt=""></a></li>
+            <li><a href=""><img src="../dist/img/rebekahnicole.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
 
     <footer class="footer py-3 bg-primary font-montserrat">
         <div class="container">

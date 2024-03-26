@@ -6,12 +6,52 @@
     @apply max-w-[73rem] p-5 w-full mx-auto
 }
 
+.container-team {
+    @apply max-w-[73rem] mx-auto w-full px-5
+}
+
+body {
+    @apply font-montserrat
+}
+
 @layer components {
+
+    @keyframes Gradient {
+        0% {
+            background-position: 25% 0%;
+        }
+        100% {
+            background-position: 40% 80%;
+        }
+    }
 
     /* HEADER */
 
     .header__nav {
-        @apply hidden md:block
+        @apply hidden md:block 
+    }
+
+    header nav ul li a {
+        @apply h-[60px] leading-[60px] w-full text-sm uppercase
+        inline-block px-4
+        /* HOVER IN MOBILE DONT DELETE */
+      /* sm:hover:bg-clrMagentaPurple sm:hover:text-light */
+        md:text-[0.87rem] md:relative
+        md:hidden lg:block;
+    }
+    
+    header nav.open ul li a {
+        @apply hover:bg-clrBg hover:text-light;
+    }
+    
+    .submenu-name::after {
+        @apply bottom-0 block h-[5px] absolute 
+        transition-all duration-300 ease-in-out w-0 content-[""]
+        md:bg-primary md:w-0 md:left-1/2;
+    }
+    
+    .submenu-name:hover:after {
+        @apply md:w-full md:left-0
     }
 
     .burger__menu span {
@@ -47,11 +87,11 @@
     /* BANNER */
 
     .banner {
-        @apply bg-no-repeat bg-right-top
+        @apply bg-no-repeat bg-right-top bg-fbsBanner bg-clrBg animate-gradient bg-custom-size
     }
 
     .banner-content h1{
-        @apply font-montserrat md:max-w-[33rem] leading-10 max-w-[20rem]
+        @apply md:max-w-[33rem] leading-10 max-w-[20rem]
     }
 
     .banner-content h1 strong {
@@ -59,14 +99,10 @@
     }
 
     .banner-content p{
-        @apply font-montserrat text-base text-left max-w-[33.4rem]
+        @apply text-base text-left max-w-[33.4rem]
     }
 
     /* DESC */
-
-    .desc {
-        @apply font-montserrat
-    }
 
     .desc p {
         @apply max-w-[55rem] text-center
@@ -75,7 +111,7 @@
     /* SERVICES */
 
     .services {
-        @apply bg-no-repeat bg-center bg-cover font-montserrat text-light
+        @apply bg-no-repeat bg-center bg-cover text-light
     }
 
     .services__wrapper {
@@ -83,20 +119,123 @@
     }
 
     .services__card {
-        @apply flex flex-col gap-3 md:max-w-[30rem] px-3
-    }
-
-    .services__card .card-title {
-        @apply flex flex-col items-center
+        @apply flex flex-col gap-3 px-3 
     }
 
     /* TESTIMONIALS */
 
     .testimonials {
-        @apply font-montserrat
+        @apply bg-clrBg
+    }
+      
+    .testimonials .container {
+        @apply md:w-[1170px];
+    }
+      
+    .testimonials h2 {
+        @apply mb-[60px] font-semibold text-center
+    }
+      
+    .testimonials span {
+        @apply font-extrabold
+    }
+      
+    .client__testimonial {
+        @apply flex flex-col w-full float-left relative min-h-1 px-4;
+    }
+      
+    .client__testimonial__content {
+        @apply flex animate-fadeInRight visible h-full px-[4vh] text-center
+        items-center justify-center
+    }
+      
+    .client__testimonial__desc {
+        @apply relative z-[1] font-bold
+    }
+      
+    .client__testimonial__desc::before {
+        @apply content-[url(/dist/img/quote-left.svg)]
+        w-24 h-auto top-[-70px] left-[-50px] absolute z-[-1] box-border;
+    }
+      
+    .client__testimonial__desc h2 {
+        @apply font-bold clear-both;
+    }
+      
+    .client__testimonial__desc::after {
+        @apply content-[url(/dist/img/quote-right.svg)]
+        w-24 bottom-[-70px] right-[-50px] absolute z-[-1] h-auto
+    }
+      
+    .client__pic img {
+        @apply max-w-full mx-auto
     }
 
-    .testimonials__wrapper {
+
+      /* .testimonials__slider {
+            @apply overflow-hidden relative;
+        } */
+
+    .testimonials__card {
+        @apply flex flex-wrap  lg:grid lg:grid-cols-2
+    }
+  
+    .client__profile {
+        @apply w-full flex flex-col float-left 
+        relative min-h-px px-[15px];
+    }
+  
+    .client__profile__content {
+        @apply visible animate-fadeInLeft mb-[60px]
+        text-center
+    }
+  
+    .client__pic img {
+        @apply w-80 h-80 object-cover rounded-[50%]
+        opacity-100 transition-opacity duration-[400] delay-0
+        max-w-full overflow-clip text-center
+    }
+    
+    .client__name h2{
+        @apply font-bold text-xl leading-[30px] clear-both block
+        my-3 mx-0;
+    }
+    
+    .client__position p {
+        @apply mb-[20px];
+    }
+    
+    .client__company h4 {
+        @apply font-bold text-[14px] mb-0 clear-both block my-4 mx-0
+        border-0 italic m-0 outline-none p-0 align-baseline;
+    }
+
+
+    .tns-nav {
+        @apply  absolute bottom-[1rem] left-[50%]
+        bottom: 1rem z-[10] translate-x-[50%]
+    }
+      
+    .tns-outer {
+        @apply relative
+    }
+      
+    .tns-liveregion {
+        @apply hidden;
+    }
+      
+    .tns-outer .tns-nav button {
+        @apply w-[15px] h-[15px] bg-yellow-500 rounded-[50%] 
+        mx-[5px] leading-normal cursor-pointer inline-block border-none
+        box-border z-[9999];
+    }
+      
+    .button.tns-nav-active {
+        @apply bg-primary;
+    }
+
+
+    /* .testimonials__wrapper {
         @apply grid gap-[3.75rem] md:grid-cols-2 md:gap-0
     }
 
@@ -110,13 +249,9 @@
     
     .testimonials__text {
         @apply flex items-center
-    }
+    } */
 
     /* NEWS */
-
-    .news {
-        @apply font-montserrat
-    }
 
     .news__wrapper {
         @apply flex flex-wrap gap-5 justify-center
@@ -148,6 +283,124 @@
 
     .btn-link {
         @apply absolute bottom-6
+    }
+
+    /* ETHICS */
+
+    .ethics__wrapper {
+        @apply grid grid-cols-1 gap-5 md:grid-cols-3 md:gap-5
+    }
+
+    .ethics__card h2 {
+        @apply font-extrabold text-xl text-center md:text-left my-5
+    }
+
+    .ethics__card p {
+        @apply text-center md:text-left
+    }
+
+    /* TEAM */
+
+    .team__group {
+        @apply hidden md:block md:relative md:min-h-[25rem] md:max-w-[1070px] 
+        md:left-[50%] md:translate-x-[-50%]
+    }
+
+    .team__box {
+        @apply absolute bottom-0
+    }
+
+    .team__box img {
+        @apply block grayscale
+    }
+
+    .team__box img:hover {
+        @apply grayscale-0
+    }
+
+    .team__position {
+        @apply text-center opacity-0 hidden
+    }
+
+    .team__box:hover .team__position {
+        @apply opacity-100 transition-all animate-tagAnimation block
+    }
+
+    .team__position p {
+        @apply font-extrabold
+    }
+
+    .team-jj {
+        @apply left-[56px] z-[2] 
+    }
+
+    .team-jj .team__position {
+        @apply mr-[5rem] mb-[0.2rem]
+    }
+
+    .team-jeff {
+        @apply left-[126px] z-[1]
+    }
+
+    .team-jeff .team__position {
+        @apply ml-[3.5rem] mb-[0.2rem]
+    }
+
+    .team-ada {
+        @apply left-[322px] z-[3]
+    }
+
+    .team-ada .team__position {
+        @apply mr-[2.5rem] mb-[0.2rem]
+    }
+
+    .team-bea {
+        @apply left-[418px] z-[4]
+    }
+
+    .team-bea .team__position {
+        @apply mb-[0.2rem] mr-[0.3rem]
+    }
+
+    .team-patrick {
+        @apply left-[554px] z-[2]
+    }
+
+    .team-patrick .team__position {
+        @apply mr-[4.5rem] mb-[0.2rem]
+    }
+
+    .team-ralph {
+        @apply left-[702px] z-[1]
+    }
+
+    .team-ralph .team__position {
+        @apply mr-[2.5rem]
+    }
+
+    .team-michael {
+        @apply left-[805px] z-[2]
+    }
+
+    .team-michael .team__position {
+        @apply ml-[1rem]
+    }
+
+    /* CTA */
+
+    .cta {
+        @apply bg-bgCta
+    }
+
+
+    /* CLIENTS */
+    
+    .clients__wrapper ul li {
+        @apply max-w-[270px] my-[2.5rem] mx-[2.8rem] place-content-center
+    }
+
+    .clients__wrapper ul li a img {
+        @apply mx-auto
     }
 
     /* FOOTER */
@@ -195,11 +448,11 @@
 @layer utilities {
     .btn {
         @apply inline-block rounded-full border-transparent border-[1px] 
-        text-lg font-normal py-[0.65rem] px-[1.6rem];
+        text-base font-normal py-[0.65rem] px-[1.6rem];
     }
 
     .btn.bg--primary {
-        @apply bg-primary text-light font-semibold text-center hover:bg-transparent hover:border-primary hover:border-[1px] hover:text-dark transition-all duration-[0.5s]
+        @apply bg-primary py-[0.75rem] px-[1.2rem] text-light font-semibold text-center hover:bg-transparent hover:border-primary hover:border-[1px] hover:text-dark transition-all duration-[0.5s]
     }
 
     .btn-read {
@@ -212,6 +465,13 @@
         @apply inline-block rounded-full border-[1px] border-dark
         text-lg font-normal py-[0.7rem] px-[1.6rem];
     }
+    
+    .btn-cta {
+        @apply inline-block rounded-full border-[1px] border-light
+        text-lg font-normal py-[0.7rem] px-[1.3rem] uppercase hover:text-primary hover:bg-light transition-all duration-[0.5s];
+    }
 
 
 }
+
+ 
