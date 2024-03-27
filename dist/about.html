@@ -11,40 +11,41 @@
   </head>
   <body>
 
-    <header>
+    <header  class="header">
       <div class="container">
-        <div
-          class="header__wrapper flex items-center bg-center justify-between">
-          <div class="logo">
-            <a href="#"><img src="./img/logo-fbs.png" alt="" /></a>
-          </div>
-          <nav class="header__nav">
-            <div>
-              <ul class="nav-links flex uppercase flex-col text-center md:flex-row items-center md:gap-0">
-                <li class="submenu-item"><a href="../dist/index.html" class="submenu-name">Home</a></li>
-                <li class="submenu-item"><a href="../dist/about.html" class="submenu-name">About</a></li>
-                <li class="submenu-item"><a href="#dropdown" class="submenu-name">Services</a>
-                  <ul class="nav-links-dropdown md:hidden">
-                    <li class="dropdown-item"><a href="#" class="text-sm">Web Solutions</a></li>
-                    <li class="dropdown-item"><a href="#" class="text-sm">Virtual Assistant Solutions</a></li>
-                    <li class="dropdown-item"><a href="#" class="text-sm">Accounting Solutions</a></li>
-                    <li class="dropdown-item"><a href="#" class="text-sm">Learning Center Solutions</a></li>
+          <div class="header__wrapper">
+              <div class="header__desk">
+                  <img src="../dist/img/logo-fbs.png" alt="">
+                  <ul>
+                      <li><a href="./index.html">HOME</a></li>
+                      <li><a href="./about.html">ABOUT</a></li>
+                      <li><a href="">SERVICES</a></li>
+                      <li><a href="">CAREER</a></li>
+                      <li><a href="">ACTIVITIES</a></li>
+                      <li><a href="">CONTACT</a></li>
+                      <li><a href="">PAYMENT</a></li>
                   </ul>
-                </li>
-                <li class="submenu-item"><a href="#" class="submenu-name">Career</a></li>
-                <li class="submenu-item"><a href="#" class="submenu-name">Activities</a></li>
-                <li class="submenu-item"><a href="#" class="submenu-name">Contact</a></li>
-                <li class="submenu-item"><a href="#" class="submenu-name">Payment</a></li>
-              </ul>
-            </div>
-          </nav>
-          <div class="burger__menu relative w-[40px] h-[40px] lg:hidden cursor-pointer transition-all duration-[0.5s] ease-in-out">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+              </div>
+              <div class="header__mobile">
+                  <ul>
+                      <li><a href="./index.html">HOME</a></li>
+                      <li><a href="./about.html">ABOUT</a></li>
+                      <li><a href="">SERVICES</a></li>
+                      <li><a href="">CAREER</a></li>
+                      <li><a href="">ACTIVITIES</a></li>
+                      <li><a href="">CONTACT</a></li>
+                      <li><a href="">PAYMENT</a></li>
+                  </ul>
+              </div>
+              <div class="toggle__menu relative">
+                  <span class="first"></span>
+                  <div class="inner">
+                      <span class="absolute"></span>
+                      <span></span>   
+                  </div>
+                  <span class="second"></span>
+              </div>
           </div>
-        </div>
       </div>
     </header>
 
@@ -254,5 +255,5 @@
   
     <script src="./js/script.js"></script>
   
-    </body>
+  </body>
 </html>

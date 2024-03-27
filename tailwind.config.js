@@ -77,6 +77,7 @@ module.exports = {
         light: "#ffffff",
         primary: "#6a103f",
         clrBg: "#f5f5f5",
+        lightPrimary: "#be2a76",
       },
 
       listStyleType: {

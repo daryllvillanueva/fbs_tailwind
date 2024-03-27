@@ -25,65 +25,73 @@ body {
         }
     }
 
-    /* HEADER */
+     /* HEADER */ 
 
-    .header__nav {
-        @apply hidden md:block 
+     .header{
+        @apply bg-light relative h-[6rem] z-[1]
     }
-
-    header nav ul li a {
-        @apply h-[60px] leading-[60px] w-full text-sm uppercase
-        inline-block px-4
-        /* HOVER IN MOBILE DONT DELETE */
-      /* sm:hover:bg-clrMagentaPurple sm:hover:text-light */
-        md:text-[0.87rem] md:relative
-        md:hidden lg:block;
+    .header__desk{
+        @apply lg:flex items-center lg:justify-between lg:w-full 
+    }
+    .header__desk ul{
+        @apply hidden lg:flex 
+    }
+    .header__desk ul li a{
+        @apply text-primary font-medium lg:relative lg:px-[1rem] 
+    }
+    .header__desk ul li a::after{
+        @apply content-[''] h-[4px] w-full scale-x-0 bg-primary block absolute left-0 bottom-[-20px] 
+        transition-all duration-300 origin-center
+    }
+    .header__desk ul li a:hover::after{
+        @apply  scale-x-100
     }
     
-    header nav.open ul li a {
-        @apply hover:bg-clrBg hover:text-light;
+    .header__mobile{
+        @apply bg-light absolute top-[5rem] left-0 w-0 h-[100vh] px-0 pt-0 overflow-hidden shadow-sm transition-all
+        lg:static lg:h-fit lg:w-fit lg:shadow-none z-[1]
+    }
+    .header__mobile.open{
+        @apply w-[100%]   transition-all
+    }
+    .header__mobile ul{
+        @apply  flex flex-col lg:hidden text-center 
+    }
+    .header__mobile ul li{
+        @apply  text-primary hover:bg-primary hover:text-light border-b-[1px] py-[1rem]
+    }
+    .header__mobile ul li a{
+        @apply font-normal pb-5 px-[10rem]
+    }
+    .header__mobile ul li:first-child{
+        @apply border-t-[1px]
+    }
+    .toggle__menu{
+        @apply lg:hidden
     }
     
-    .submenu-name::after {
-        @apply bottom-0 block h-[5px] absolute 
-        transition-all duration-300 ease-in-out w-0 content-[""]
-        md:bg-primary md:w-0 md:left-1/2;
+    .toggle__menu span{
+        @apply w-[2.1rem] h-[.3rem] bg-primary block rounded-full transition-all 
     }
-    
-    .submenu-name:hover:after {
-        @apply md:w-full md:left-0
+    .toggle__menu span:nth-child(2){
+        @apply my-1
     }
-
-    .burger__menu span {
-        @apply bg-primary block absolute h-[0.5rem] w-full rounded-xl transition-all duration-[0.25s] ease-in-out
+    .header__wrapper{
+        @apply flex items-center justify-between
     }
-
-    .burger__menu span:nth-child(1) {
-        @apply top-0
+    .toggle__menu.open .first{
+        @apply scale-x-0 transition duration-300
     }
-    .burger__menu span:nth-child(2) {
-        @apply top-[15px]
+    .toggle__menu.open .second{
+        @apply scale-x-0 transition-all duration-300 
     }
-    .burger__menu span:nth-child(3) {
-        @apply top-[15px]
+    .toggle__menu.open .inner span:first-child{
+        @apply transform translate-y-[-4px] rotate-[45deg] transition-all duration-300
     }
-    .burger__menu span:nth-child(4) {
-        @apply top-[30px]
+    .toggle__menu.open .inner span:last-child{
+        @apply transform translate-y-[-4px] rotate-[-45deg] transition-all duration-300
     }
 
-    .burger__menu.open span:nth-child(1), .burger__menu.open span:nth-child(4) {
-        @apply w-[0%] left-[30%] top-[10px]
-    }
-
-    .burger__menu.open span:nth-child(2) {
-        @apply rotate-45
-    }
-
-    .burger__menu.open span:nth-child(3) {
-        @apply -rotate-45
-    }
-
-    
     /* BANNER */
 
     .banner {
@@ -126,19 +134,7 @@ body {
 
     .testimonials {
         @apply bg-clrBg
-    }
-      
-    .testimonials .container {
-        @apply md:w-[1170px];
-    }
-      
-    .testimonials h2 {
-        @apply mb-[60px] font-semibold text-center
-    }
-      
-    .testimonials span {
-        @apply font-extrabold
-    }
+      }
       
     .client__testimonial {
         @apply flex flex-col w-full float-left relative min-h-1 px-4;
@@ -159,7 +155,7 @@ body {
     }
       
     .client__testimonial__desc h2 {
-        @apply font-bold clear-both;
+        @apply font-extrabold clear-both;
     }
       
     .client__testimonial__desc::after {
@@ -168,88 +164,73 @@ body {
     }
       
     .client__pic img {
-        @apply max-w-full mx-auto
+        @apply max-w-full mx-auto opacity-[1] transition-opacity duration-[400ms] delay-0;
     }
-
-
-      /* .testimonials__slider {
-            @apply overflow-hidden relative;
-        } */
-
+      
     .testimonials__card {
-        @apply flex flex-wrap  lg:grid lg:grid-cols-2
+        @apply flex flex-wrap md:grid md:grid-cols-2
     }
-  
+      
     .client__profile {
         @apply w-full flex flex-col float-left 
         relative min-h-px px-[15px];
     }
-  
+      
     .client__profile__content {
         @apply visible animate-fadeInLeft mb-[60px]
         text-center
     }
-  
+      
     .client__pic img {
         @apply w-80 h-80 object-cover rounded-[50%]
         opacity-100 transition-opacity duration-[400] delay-0
         max-w-full overflow-clip text-center
     }
-    
+      
     .client__name h2{
-        @apply font-bold text-xl leading-[30px] clear-both block
-        my-3 mx-0;
+        @apply font-medium text-xl leading-[30px] clear-both block
+        my-2 mb-1 mx-0;
     }
-    
+      
     .client__position p {
         @apply mb-[20px];
     }
-    
+      
     .client__company h4 {
         @apply font-bold text-[14px] mb-0 clear-both block my-4 mx-0
         border-0 italic m-0 outline-none p-0 align-baseline;
     }
-
-
-    .tns-nav {
-        @apply  absolute bottom-[1rem] left-[50%]
-        bottom: 1rem z-[10] translate-x-[50%]
+    
+    .testimonial__wrapper .tns-outer {
+        @apply relative;
     }
       
-    .tns-outer {
-        @apply relative
+    .testimonial__wrapper .tns-nav {
+        @apply z-[999] absolute md:bottom-[2rem]
+        left-[50%]
+        -translate-x-1/2
+        translate-y-[250%];
     }
       
-    .tns-liveregion {
+    .testimonial__wrapper .tns-liveregion {
         @apply hidden;
     }
       
-    .tns-outer .tns-nav button {
-        @apply w-[15px] h-[15px] bg-yellow-500 rounded-[50%] 
-        mx-[5px] leading-normal cursor-pointer inline-block border-none
-        box-border z-[9999];
+      
+    .testimonial__wrapper .tns-nav button {
+        @apply mx-[5px]
+        w-[15px]
+        h-[15px]
+        rounded-[50%]
+        bg-primary
+        leading-normal
+        inline-block border-none
+        box-border z-[9999] cursor-pointer ;
     }
       
-    .button.tns-nav-active {
-        @apply bg-primary;
+    .testimonial__wrapper button.tns-nav-active {
+        @apply bg-lightPrimary;
     }
-
-
-    /* .testimonials__wrapper {
-        @apply grid gap-[3.75rem] md:grid-cols-2 md:gap-0
-    }
-
-    .testimonials__info {
-        @apply flex flex-col items-center
-    }
-
-    .testimonials__info img {
-        @apply rounded-full max-w-[20rem] object-cover
-    }
-    
-    .testimonials__text {
-        @apply flex items-center
-    } */
 
     /* NEWS */
 
@@ -470,8 +451,6 @@ body {
         @apply inline-block rounded-full border-[1px] border-light
         text-lg font-normal py-[0.7rem] px-[1.3rem] uppercase hover:text-primary hover:bg-light transition-all duration-[0.5s];
     }
-
-
 }
 
  

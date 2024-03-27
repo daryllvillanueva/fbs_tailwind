@@ -9,45 +9,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css">
+
   </head>
   <body>
-    <header>
+
+    <header  class="header">
       <div class="container">
-        <div
-          class="header__wrapper flex items-center bg-center justify-between">
-          <div class="logo">
-            <a href="#"><img src="./img/logo-fbs.png" alt="" /></a>
-          </div>
-          <nav class="header__nav font-montserrat">
-            <div>
-              <ul class="nav-links flex uppercase flex-col text-center md:flex-row items-center md:gap-0">
-                <li class="submenu-item"><a href="../dist/index.html" class="submenu-name">Home</a></li>
-                <li class="submenu-item"><a href="../dist/about.html" class="submenu-name">About</a></li>
-                <li class="submenu-item"><a href="#dropdown" class="submenu-name">Services</a>
-                  <ul class="nav-links-dropdown md:hidden">
-                    <li class="dropdown-item"><a href="#" class="text-sm">Web Solutions</a></li>
-                    <li class="dropdown-item"><a href="#" class="text-sm">Virtual Assistant Solutions</a></li>
-                    <li class="dropdown-item"><a href="#" class="text-sm">Accounting Solutions</a></li>
-                    <li class="dropdown-item"><a href="#" class="text-sm">Learning Center Solutions</a></li>
+          <div class="header__wrapper">
+              <div class="header__desk">
+                  <img src="../dist/img/logo-fbs.png" alt="">
+                  <ul>
+                      <li><a href="./index.html">HOME</a></li>
+                      <li><a href="./about.html">ABOUT</a></li>
+                      <li><a href="">SERVICES</a></li>
+                      <li><a href="">CAREER</a></li>
+                      <li><a href="">ACTIVITIES</a></li>
+                      <li><a href="">CONTACT</a></li>
+                      <li><a href="">PAYMENT</a></li>
                   </ul>
-                </li>
-                <li class="submenu-item"><a href="#" class="submenu-name">Career</a></li>
-                <li class="submenu-item"><a href="#" class="submenu-name">Activities</a></li>
-                <li class="submenu-item"><a href="#" class="submenu-name">Contact</a></li>
-                <li class="submenu-item"><a href="#" class="submenu-name">Payment</a></li>
-              </ul>
-            </div>
-          </nav>
-          <div class="burger__menu relative w-[40px] h-[40px] lg:hidden cursor-pointer transition-all duration-[0.5s] ease-in-out">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+              </div>
+              <div class="header__mobile">
+                  <ul>
+                      <li><a href="./index.html">HOME</a></li>
+                      <li><a href="./about.html">ABOUT</a></li>
+                      <li><a href="">SERVICES</a></li>
+                      <li><a href="">CAREER</a></li>
+                      <li><a href="">ACTIVITIES</a></li>
+                      <li><a href="">CONTACT</a></li>
+                      <li><a href="">PAYMENT</a></li>
+                  </ul>
+              </div>
+              <div class="toggle__menu relative">
+                  <span class="first"></span>
+                  <div class="inner">
+                      <span class="absolute"></span>
+                      <span></span>   
+                  </div>
+                  <span class="second"></span>
+              </div>
           </div>
-        </div>
       </div>
     </header>
+
 
     <section class="banner bg-accent py-12">
       <div class="container">
@@ -154,253 +157,256 @@
     </section>
 
 
-    <section class="testimonials">
+    <section class="testimonials py-[4rem]">
       <div class="container">
-        <h2 class="banner-title text-center mb-60 font-bold">Hear what our 
-          <span class="font-bold">clients say.</span>
+        <h2 class="text-center mb-16 font-medium text-3xl">Hear what our 
+          <strong class="font-extrabold">clients say.</strong>
         </h2>
-        
-        <div class="testimonials__slider">
+
+        <div class="testimonial__wrapper">
+          <div class="testimonials__slider">
+
           <div class="slider__item">
             <div class="testimonials__card">
               <div class="client__profile">
                 <div class="client__profile__content">
                   <div class="client__pic">
-                    <img src="/dist/img/jamesDavidson-e1685672789528.jpg" alt="">
+                  <img src="/dist/img/jamesDavidson-e1685672789528.jpg" alt="">
                   </div>
-                  <div class="client__name">
-                    <h2>James Davidson</h2>
+                 <div class="client__name">
+                  <h2>James Davidson</h2>
                   </div>
                   <div class="client__position">
-                    <p>Managing Director & President</p>
+                      <p>Managing Director & President</p>
                   </div>
+
                   <div class="client__company">
                     <h4>Avant Advisory Group</h4>
                   </div>
                 </div>
-              </div>
-              
-              <div class="client__testimonial">
-                <div class="client__testimonial__content">
-                  <div class="client__testimonial__desc text-[14px]">    
+                
+                </div>
+             
+                <div class="client__testimonial">
+                  <div class="client__testimonial__content">
+                    <div class="client__testimonial__desc text-base">    
                     “Frontline Business Solutions” is beyond an exceptional firm. Professional courtesy, responsiveness, competence, and client service are only a few of the many high level qualities that Frontline’s team exhibit.  Frontline exemplifies the golden rule by treating its clients as it would like to be treated. Every Frontline team member  with whom Avant Advisory Group has dealt has been a true blessing.
                     Finally, based on Avant Advisory Group’s several years of working with Frontline personnel, and especially Mike DeJesus, I can say that they work heartily for their clients as if they are working for the Lord. (Colossians 3:23-24)
                     Thank you for what you do, Frontline!”
                   </div>
                 </div>
-              </div>
+          </div>
             </div>
           </div>
           
           <div class="slider__item">
             <div class="testimonials__card">
+
               <div class="client__profile">
                 <div class="client__profile__content">
                   <div class="client__pic">
-                    <img src="/dist/img/robert.jpg" alt="">
-                  </div>
-                  <div class="client__name">
-                    <h2>Robert Han</h2>
+                  <img src="/dist/img/robert.jpg" alt="">
+                </div>
+                <div class="client__name">
+                  <h2>Robert Han</h2>
                   </div>
                   <div class="client__position">
-                    <p>COO/Partner</p>
+                      <p>COO/Partner</p>
                   </div>
+
                   <div class="client__company">
                     <h4>Twomiles</h4>
                   </div>
                 </div>
-              </div>
-              
-              <div class="client__testimonial">
-                <div class="client__testimonial__content">
-                  <div class="client__testimonial__desc text-[14px]">    
-                    “FBS is a true partner to our firm.  They have help form our vision and trajectory.  We are immensely grateful our partnership.  
-                    Our expectation is to FBS to grow with us.  They are an important part of our success.  And beyond the business perspective, they are fantastic people.  We are blessed to work with them.”
+                
+                </div>
+            
+                <div class="client__testimonial">
+                  <div class="client__testimonial__content">
+                    <div class="client__testimonial__desc">
+                      <h2 class="text-lg">“FBS is a true partner to our firm.  They have help form our vision and trajectory.  We are immensely grateful our partnership.  Our expectation is to FBS to grow with us.  They are an important part of our success.  
+                        And beyond the business perspective, they are fantastic people.  We are blessed to work with them.”</h2>
+                      </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="slider__item">
-            <div class="testimonials__card">
-              <div class="client__profile">
-                <div class="client__profile__content">
-                  <div class="client__pic">
-                    <img src="/dist/img/james_sunderland.png" alt="">
-                  </div>
-                  <div class="client__name">
-                    <h2>James Sunderland</h2>
-                  </div>
-                  <div class="client__position">
-                    <p>VP Creative</p>
-                  </div>
-                  <div class="client__company">
-                    <h4>Over The Top Marketing</h4>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="client__testimonial">
-                <div class="client__testimonial__content">
-                  <div class="client__testimonial__desc text-[14px]">    
-                    “The team at Frontline is incredible. They genuinely care about our needs and share in our vision of success. 
-                    We are proud to call them a business partner and appreciate all the hard work they do for us.”
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           
           <div class="slider__item">
             <div class="testimonials__card">
-              <div class="client__profile">
-                <div class="client__profile__content">
-                  <div class="client__pic">
-                    <img src="/dist/img/tim-salmonson.png" alt="">
-                  </div>
-                  <div class="client__name">
-                    <h2>Tim Salmonson</h2>
+            
+            <div class="client__profile">
+              <div class="client__profile__content">
+                <div class="client__pic">
+                <img src="/dist/img/james_sunderland.png" alt="">
+                </div>
+
+                <div class="client__name">
+                  <h2>James Sunderland</h2>
                   </div>
                   <div class="client__position">
-                    <p>Social Economist</p>
+                      <p>VP Creative</p>
                   </div>
+
+                  <div class="client__company">
+                    <h4>Avant Advisory Group</h4>
+                  </div>
+                </div>
+              
+              </div>
+            
+              <div class="client__testimonial">
+                <div class="client__testimonial__content">
+                  <div class="client__testimonial__desc">
+                    <h2 class="text-xl">“The team at Frontline is incredible. They genuinely care about our needs and share in our vision of success. 
+                      We are proud to call them a business partner and appreciate all the hard work they do for us.”</h2>
+                    </div>
+                </div>
+              </div>
+          </div>
+          </div>
+
+          <div class="slider__item">
+            <div class="testimonials__card">
+            
+            <div class="client__profile">
+              <div class="client__profile__content">
+                <div class="client__pic">
+                  <img src="/dist/img/tim-salmonson.png" alt="">
+                </div>
+                <div class="client__name">
+                  <h2>Tim Salmonson</h2>
+                  </div>
+                  <div class="client__position">
+                      <p>Social Economist</p>
+                  </div>
+                      
                   <div class="client__company">
                     <h4>Social Economic Enterprises</h4>
                   </div>
-                </div>
               </div>
               
-              <div class="client__testimonial">
-                <div class="client__testimonial__content">
-                  <div class="client__testimonial__desc text-[14px]">    
-                    “There is no better business model.”
-                  </div>
+            </div>
+            
+            <div class="client__testimonial">
+              <div class="client__testimonial__content">
+                <div class="client__testimonial__desc">
+                  <h2 class="text-xl font-bold">
+                    There is no better business model
+                  </h2>
                 </div>
               </div>
             </div>
+
+            </div>
+          </div>
+        
+          <div class="slider__item">
+            <div class="testimonials__card">
+                      <div class="client__profile">
+                        <div class="client__profile__content">
+                            <div class="client__pic">
+                            <img src="/dist/img/jeffrey-seitz.png" alt="">
+                          </div>
+                          <div class="client__name">
+                            <h2>Jeffrey Seitz</h2>
+                            </div>
+                            <div class="client__position">
+                                <p>Chief Executive Officer</p>
+                            </div>
+
+                            <div class="client__company">
+                              <h4>Phix Genomics</h4>
+                            </div>
+                        </div>
+                        
+                        </div>
+                    
+                        <div class="client__testimonial">
+                          <div class="client__testimonial__content">
+                            <div class="client__testimonial__desc">
+                              <h2 class="text-xl">
+                                I have worked with a number of different website developers, 
+                                ut none have been as responsive or as quick to turn the work around.
+                              </h2>
+                              </div>
+                          </div>
+                        </div>
+                  </div>
           </div>
 
-          
           <div class="slider__item">
             <div class="testimonials__card">
               <div class="client__profile">
                 <div class="client__profile__content">
                   <div class="client__pic">
-                    <img src="/dist/img/jeffrey-seitz.png" alt="">
-                  </div>
-                  <div class="client__name">
-                    <h2>Jeffrey Seitz</h2>
-                  </div>
-                  <div class="client__position">
-                    <p>Chief Executive Officer</p>
-                  </div>
-                  <div class="client__company">
-                    <h4>Phix Genomics</h4>
-                  </div>  
-                </div>
-              </div>
-              
-              <div class="client__testimonial">
-                <div class="client__testimonial__content">
-                  <div class="client__testimonial__desc text-[14px]">    
-                    I have worked with a number of different website developers, but none have been as responsive or as quick to turn the work around.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="slider__item">
-            <div class="testimonials__card">
-              <div class="client__profile">
-                <div class="client__profile__content">
-                  <div class="client__pic">
-                    <img src="/dist/img/testi-doodz.png" alt="">
-                  </div>
+                  <img src="/dist/img/testi-doodz.png" alt="">
                   <div class="client__name">
                     <h2>Rhoda Lynn Pessina Dayo</h2>
+                    </div>
+                    <div class="client__position">
+                      <p>School Directress</p>
+                    </div>
+                    <div class="client__company">
+                      <h4>Frontline Christian Academy</h4>
+                    </div>
                   </div>
-                  <div class="client__position">
-                    <p>School Directress</p>
-                  </div>
-                  <div class="client__company">
-                    <h4>Frontline Christian Academy</h4>
-                  </div>  
                 </div>
               </div>
               
-              <div class="client__testimonial">
-                <div class="client__testimonial__content">
-                  <div class="client__testimonial__desc text-[14px]">    
-                    We enjoyed working together and meeting with the Frontline Business Solutions Staff when they built the website of Frontline Christian Academy.
+              
+                <div class="client__testimonial">
+                  <div class="client__testimonial__content">
+                    <div class="client__testimonial__desc">
+                      <h2 class="text-xl">
+                        We enjoyed working together and meeting with the Frontline Business Solutions Staff when they built the website of Frontline Christian Academy.
+                      </h2>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              
+          </div>
           </div>
 
           <div class="slider__item">
             <div class="testimonials__card">
-              <div class="client__profile">
-                <div class="client__profile__content">
-                  <div class="client__pic">
-                    <img src="/dist/img/ralph-raymund-pinon.png" alt="">
+                <div class="client__profile">
+                  <div class="client__profile__content">
+                    <div class="client__pic">
+                      <img src="/dist/img/ralph-raymund-pinon.png" alt="">
+                    </div>
+                    <div class="client__name">
+                      <h2>Raymund Pinon</h2>
+                      </div>
+                      <div class="client__position">
+                          <p>VP Sales and Marketing</p>
+                      </div>
+
+                      <div class="client__company">
+                        <h4>Phix Genomics Philippines</h4>
+                      </div>
+                    </div>
+                  
                   </div>
-                  <div class="client__name">
-                    <h2>Raymund Pinon</h2>
-                  </div>
-                  <div class="client__position">
-                    <p>VP Sales and Marketings</p>
-                  </div>
-                  <div class="client__company">
-                    <h4>Phix Genomics Philippines</h4>
-                  </div>  
-                </div>
-              </div>
               
-              <div class="client__testimonial">
-                <div class="client__testimonial__content">
-                  <div class="client__testimonial__desc text-[14px]">    
-                    Yes, we are pleased to have chosen Frontline Business Solutions as our partner in developing the PHIX Genomics website because you are able to deliver on your promises.
+                  <div class="client__testimonial">
+                    <div class="client__testimonial__content">
+                      <div class="client__testimonial__desc">
+                        <h2 class="text-lg">
+                          Yes, we are pleased to have chosen Frontline Business Solutions as our partner in developing the 
+                          PHIX Genomics website because you are able to deliver on your promises.
+                        </h2>
+                        </div>
+                    </div>
                   </div>
-                </div>
               </div>
-            </div>
           </div>
-          
-        </div>
-
-      </div>   
-  </section>
-
-
-  <!-- <section class="testimonials bg-clrBg py-[5rem]">
-      <div class="container">
-        <h2 class="text-3xl font-medium text-center mb-16">Hear what our <strong class="font-extrabold">clients say.</strong></h2>
-        <div class="testimonials__wrapper">
-          <div class="testimonials__info">
-            <img src="../dist/img/jamesDavidson-e1685672789528.jpg" alt="">
-            <h2 class="mt-3 font-semibold text-xl">James Davidson</h2>
-            <p class="mb-[1.25rem]">Managing Director & President</p>
-            <h4 class="text-sm font-semibold">Avant Advisory Group</h4>
-          </div>
-          <div class="testimonials__text px-10">
-            <div class="testimonials__desc">
-              <h2>
-                <div class="font-bold text-[0.87rem] text-center leading-8">
-                  “Frontline Business Solutions” Is beyond an exceptional firm. Professional courtesy, responsiveness, competence, and client service are only a few of the many high level qualities that Frontline’s team exhibit. 
-                  Frontline exemplifies the golden rule by treating its clients as it would like to be treated. 
-                  Every Frontline team member with whom Avant Advisory Group has dealt has been a true blessing. Finally, based on Avant Advisory Group’s several years of working with Frontline personnel, and especially Mike DeJesus, 
-                  I can say that they work heartily for their clients as if they are working for the Lord. (Colossians 3:23-24) Thank you for what you do, Frontline!”
-                </div>
-              </h2>
-            </div>
           </div>
         </div>
-      </div>
-  </section> -->
+        
+
+       </div>   
+    </section>
 
     <section class="news py-[5rem]">
       <div class="container">
@@ -502,9 +508,9 @@
       controls: false,
       autoplayButtonOutput: false,
       slideBy: 'page',
-      autoplay: true,
       nav: true,
       navPosition: "bottom",
+      mouseDrag: true,
     });
     
     </script>
