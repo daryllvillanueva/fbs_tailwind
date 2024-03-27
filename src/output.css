@@ -931,7 +931,7 @@ video {
   box-sizing: border-box;
   height: auto;
   width: 6rem;
-  --tw-content: url(/dist/img/quote-left.svg);
+  --tw-content: url(../dist/img/quote-left.svg);
   content: var(--tw-content);
 }
 
@@ -947,7 +947,7 @@ video {
   z-index: -1;
   height: auto;
   width: 6rem;
-  --tw-content: url(/dist/img/quote-right.svg);
+  --tw-content: url(../dist/img/quote-right.svg);
   content: var(--tw-content);
 }
 

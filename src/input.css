@@ -150,7 +150,7 @@ body {
     }
       
     .client__testimonial__desc::before {
-        @apply content-[url(/dist/img/quote-left.svg)]
+        @apply content-[url(../dist/img/quote-left.svg)]
         w-24 h-auto top-[-70px] left-[-50px] absolute z-[-1] box-border;
     }
       
@@ -159,7 +159,7 @@ body {
     }
       
     .client__testimonial__desc::after {
-        @apply content-[url(/dist/img/quote-right.svg)]
+        @apply content-[url(../dist/img/quote-right.svg)]
         w-24 bottom-[-70px] right-[-50px] absolute z-[-1] h-auto
     }
       
