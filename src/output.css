@@ -1626,6 +1626,10 @@ video {
   animation: Gradient 15s ease forwards;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .list-circle {
   list-style-type: circle;
 }
@@ -2008,6 +2012,14 @@ body {
 @media (min-width: 1024px) {
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:gap-3 {
+    gap: 0.75rem;
   }
 }
 
